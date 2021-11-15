@@ -15,6 +15,9 @@ import tn.esprit.spring.entities.Entreprise;
 public interface EmployeRepository extends CrudRepository<Employe, Integer>  {
 	
 	
+	
+	
+	
 	@Query("SELECT count(*) FROM Employe")
     public int countemp();
 	
